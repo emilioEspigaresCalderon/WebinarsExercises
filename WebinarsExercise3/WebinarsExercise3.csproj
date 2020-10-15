@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{090F3BC9-39D3-473A-90BD-DA8838758F4D}</ProjectGuid>
+    <ProjectGuid>{69D22C0B-6CD9-4C42-BBD9-5671F9A4077D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WebinarsExercise3</RootNamespace>
     <AssemblyName>WebinarsExercise3</AssemblyName>

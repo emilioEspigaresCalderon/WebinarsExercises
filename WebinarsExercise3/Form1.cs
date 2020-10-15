@@ -17,9 +17,20 @@ namespace WebinarsExercise3
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            int op1, op2, res;
+            op1 = Convert.ToInt32(textBox1.Text);
+            op2 = Convert.ToInt32(textBox2.Text);
+            res = op1 + op2;
+            textBox3.Text = Convert.ToString(res);
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
         }
     }
 }
