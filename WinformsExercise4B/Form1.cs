@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WebinarsExercise4
+namespace WinformsExercise4B
 {
     public partial class Form1 : Form
     {
@@ -21,28 +21,10 @@ namespace WebinarsExercise4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = "+";
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            label1.Text = "?";
-            textBox1.Text = "0";
-            textBox2.Text = "0";
-            textBox3.Text = "0";
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            label1.Text = "-";
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
             op1 = Convert.ToInt32(textBox1.Text);
             op2 = Convert.ToInt32(textBox2.Text);
-            
-            switch(label1.Text)
+
+            switch (listBox1.Text)
             {
                 case "-":
                     res = op1 - op2;
@@ -52,10 +34,17 @@ namespace WebinarsExercise4
                     res = op1 + op2;
                     textBox3.Text = Convert.ToString(res);
                     break;
-                case "?":
+                case "--Select--":
                     MessageBox.Show("Warning! Operation not selected!");
                     break;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+            textBox2.Text = "0";
+            textBox3.Text = "0";
         }
     }
 }
