@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformsExercise2", "Winfor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformsExercise4", "WinformsExercise4\WinformsExercise4.csproj", "{7CD7D790-6BE7-4CC3-91BB-74BB54622A41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformsExercise5", "WinformsExercise5\WinformsExercise5.csproj", "{6A7F4934-0314-4BA7-84DD-12518FA6B4F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7CD7D790-6BE7-4CC3-91BB-74BB54622A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD7D790-6BE7-4CC3-91BB-74BB54622A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD7D790-6BE7-4CC3-91BB-74BB54622A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A7F4934-0314-4BA7-84DD-12518FA6B4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A7F4934-0314-4BA7-84DD-12518FA6B4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A7F4934-0314-4BA7-84DD-12518FA6B4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A7F4934-0314-4BA7-84DD-12518FA6B4F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
