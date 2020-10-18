@@ -19,43 +19,43 @@ namespace WebinarsExercise4
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void sum_Click(object sender, EventArgs e)
         {
-            label1.Text = "+";
+            operationLabel.Text = "+";
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void reset_Click(object sender, EventArgs e)
         {
-            label1.Text = "?";
-            textBox1.Text = "0";
-            textBox2.Text = "0";
-            textBox3.Text = "0";
+            operationLabel.Text = "?";
+            operand1.Text = "0";
+            operand2.Text = "0";
+            Result.Text = "0";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void calculate_Click(object sender, EventArgs e)
         {
-            label1.Text = "-";
-        }
+            op1 = Convert.ToInt32(operand1.Text);
+            op2 = Convert.ToInt32(operand2.Text);
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            op1 = Convert.ToInt32(textBox1.Text);
-            op2 = Convert.ToInt32(textBox2.Text);
-            
-            switch(label1.Text)
+            switch(operationLabel.Text)
             {
                 case "-":
                     res = op1 - op2;
-                    textBox3.Text = Convert.ToString(res);
                     break;
                 case "+":
                     res = op1 + op2;
-                    textBox3.Text = Convert.ToString(res);
                     break;
                 case "?":
-                    MessageBox.Show("Warning! Operation not selected!");
+                    MessageBox.Show("Select an operation, please");
                     break;
             }
+            
+            Result.Text = Convert.ToString(res);
+        }
+
+        private void substract_Click(object sender, EventArgs e)
+        {
+            operationLabel.Text = "-";
         }
     }
 }

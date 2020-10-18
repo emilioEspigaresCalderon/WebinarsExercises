@@ -17,20 +17,20 @@ namespace WebinarsExercise3
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void sum_Click(object sender, EventArgs e)
         {
             int op1, op2, res;
-            op1 = Convert.ToInt32(textBox1.Text);
-            op2 = Convert.ToInt32(textBox2.Text);
+            op1 = Convert.ToInt32(operand1.Text);
+            op2 = Convert.ToInt32(operand2.Text);
             res = op1 + op2;
-            textBox3.Text = Convert.ToString(res);
+            result.Text = Convert.ToString(res);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void reset_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
+            operand1.Text = "";
+            operand2.Text = "";
+            result.Text = "";
         }
     }
 }

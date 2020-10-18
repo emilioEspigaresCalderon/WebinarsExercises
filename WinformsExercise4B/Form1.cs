@@ -14,25 +14,20 @@ namespace WinformsExercise4B
     {
         int op1, op2, res;
 
-        public Form1()
+        private void calculate_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-        }
+            op1 = Convert.ToInt32(operand1.Text);
+            op2 = Convert.ToInt32(operand2.Text);
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            op1 = Convert.ToInt32(textBox1.Text);
-            op2 = Convert.ToInt32(textBox2.Text);
-
-            switch (listBox1.Text)
+            switch (operation.Text)
             {
                 case "-":
                     res = op1 - op2;
-                    textBox3.Text = Convert.ToString(res);
+                    result.Text = Convert.ToString(res);
                     break;
                 case "+":
                     res = op1 + op2;
-                    textBox3.Text = Convert.ToString(res);
+                    result.Text = Convert.ToString(res);
                     break;
                 case "--Select--":
                     MessageBox.Show("Warning! Operation not selected!");
@@ -40,11 +35,16 @@ namespace WinformsExercise4B
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void reset_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "0";
-            textBox2.Text = "0";
-            textBox3.Text = "0";
+            operand1.Text = "0";
+            operand2.Text = "0";
+            result.Text = "0";
+        }
+
+        public Form1()
+        {
+            InitializeComponent();
         }
     }
 }

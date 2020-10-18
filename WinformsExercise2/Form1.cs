@@ -19,9 +19,9 @@ namespace WebinarsExercise2
             InitializeComponent();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if(checkBox.Checked == true)
             {
                 MessageBox.Show("Checkbox Checked");
             }
